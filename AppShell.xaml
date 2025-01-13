@@ -9,6 +9,12 @@
     Title="MauiNet9">
 
     <ShellContent
+     Title="Home"
+     Icon="{StaticResource IconDashboard}"
+     ContentTemplate="{DataTemplate pages:HomePage}"
+     Route="home" />
+
+    <ShellContent
         Title="Dashboard"
         Icon="{StaticResource IconDashboard}"
         ContentTemplate="{DataTemplate pages:MainPage}"

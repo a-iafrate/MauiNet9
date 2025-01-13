@@ -9,7 +9,16 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new AppShell());
+            return new WindowTitleBar();
         }
+
+
+        // Original code
+        //protected override Window CreateWindow(IActivationState? activationState)
+        //{
+        //    return new Window(new AppShell());
+        //}
+
+
     }
 }
