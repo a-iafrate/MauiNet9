@@ -75,6 +75,7 @@
 		<PackageReference Include="Syncfusion.Maui.Toolkit" Version="1.0.1" />
 	</ItemGroup>
 
+
 	<ItemGroup>
 	  <Compile Update="Pages\WindowTitleBar.xaml.cs">
 	    <DependentUpon>WindowTitleBar.xaml</DependentUpon>
