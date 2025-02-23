@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiNet9.Pages.HomePage"
              Title="HomePage">
-    
-        <Grid RowDefinitions="Auto,*"
+
+    <Grid RowDefinitions="Auto,*"
       ColumnDefinitions="*">
-            
-            <HybridWebView x:Name="hybridWebView"
-                   
+        <Button Text="Send message to JavaScript"
+            Clicked="OnSendMessageButtonClicked" />
+        <HybridWebView x:Name="hybridWebView"
+                   RawMessageReceived="OnHybridWebViewRawMessageReceived"
                    Grid.Row="1" />
-            </Grid>
-    
+    </Grid>
+
 </ContentPage>

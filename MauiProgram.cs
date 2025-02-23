@@ -25,7 +25,8 @@ namespace MauiNet9
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Services.AddHybridWebViewDeveloperTools();
+            builder.Logging.AddDebug();
     		builder.Services.AddLogging(configure => configure.AddDebug());
 #endif
 
