@@ -6,11 +6,10 @@
 
     <Grid RowDefinitions="Auto,*"
       ColumnDefinitions="*">
-        <Button Text="Send message to JavaScript"
-            Clicked="OnSendMessageButtonClicked" />
-        <HybridWebView x:Name="hybridWebView"
-                   RawMessageReceived="OnHybridWebViewRawMessageReceived"
-                   Grid.Row="1" />
+        <Button Text="Send message to JavaScript" Clicked="OnSendMessageButtonClicked" />
+        
+        <HybridWebView x:Name="hybridWebView" RawMessageReceived="OnHybridWebViewRawMessageReceived"  Grid.Row="1" />
+        
     </Grid>
 
 </ContentPage>
